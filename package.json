@@ -3,7 +3,7 @@
     "displayName": "AML support",
     "description": "",
     "publisher": "MuleSoftInc",
-    "version": "0.1.0-SNAPSHOT",
+    "version": "0.3.174",
     "engines": {
         "vscode": "^1.52.0"
     },
@@ -215,13 +215,12 @@
         }
     },
     "dependencies": {
-        "@mulesoft/als-node-client": "4.0.0",
+        "@mulesoft/als-node-client": "4.1.1",
         "@types/mocha": "^8.2.1",
         "@types/node": "^11.15.20",
         "@types/vscode": "1.52.0",
         "mocha": "^8.4.0",
         "ts-loader": "^8.3.0",
-        "typescript": "^3.9.9",
         "upath": "^1.2.0",
         "vsce": "^1.88.0",
         "vscode-languageclient": "^7.0.0",
@@ -237,5 +236,8 @@
         "test-compile": "tsc -p ./",
         "pretest": "npm run test-compile",
         "test": "node ./out/test/runTest.js"
+    },
+    "devDependencies": {
+        "typescript": "^4.4.3"
     }
 }
